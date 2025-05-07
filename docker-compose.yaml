@@ -52,9 +52,9 @@ services:
    image: mysql:1
    container_name: mysql 
 
-  shipping:
-    image: shipping:v1
-    container_name: shipping
+  shapping:
+    image: shapping:v1
+    container_name: shapping
     depends_on:
     - mysql 
 
