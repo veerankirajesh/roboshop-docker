@@ -6,7 +6,7 @@ ENV AMQP_USER=roboshop \
 USER root
 WORKDIR /app
 COPY requirements.txt /app/
-RUN apk add python3-dev build-base linux-headers pcre-dev
+RUN apk add python3-dev build-base linux-headers pcre-dev   # run pip install -r reqirements.txt
 RUN pip install -r requirements.txt
 COPY *.py /app/
 COPY payment.ini /app/
